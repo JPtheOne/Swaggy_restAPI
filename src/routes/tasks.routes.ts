@@ -1,12 +1,9 @@
-// aqui se definen las rutas de la API (las URLs)
+import { Router, Request, Response } from "express";
 
-/*
-import { Router } from "express"
+const router = Router();
 
-const router = Router()
+router.get('/tasks', (req: Request, res: Response) => {
+    res.send('Tareas');
+});
 
-router.get('/tasks', (req, res) => res.send('Tareas'))
-
-export default router
-
-*/
+export default router;
